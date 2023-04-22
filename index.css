@@ -1,0 +1,618 @@
+:root {
+  --logo: "DynaPuff", cursive;
+  --header: "Raleway", sans-serif;
+  --body: "Poppins", sans-serif;
+  --black: #18191c;
+  --grey: #74788d;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 200;
+  font-family: var(--header);
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 200;
+  font-family: var(--header);
+  color: var(--black);
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 2.25rem;
+  font-weight: 200;
+  font-family: var(--header);
+}
+
+p {
+  font-size: 1rem;
+  font-family: var(--body);
+  line-height: 1.25;
+  color: var(--black);
+  line-height: 1.5;
+}
+
+.intro-section nav {
+  width: 450px;
+  height: 100%;
+}
+
+ul {
+  height: inherit;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+  font-family: var(--body);
+}
+
+.footer a {
+  font-size: 1rem;
+}
+
+.footer nav {
+  width: 400px;
+}
+
+.footer h3 {
+  font-weight: 200;
+  font-family: var(--logo);
+  color: white;
+}
+
+li {
+  border-bottom: 2px solid #ffffff00;
+  padding: 10px 0;
+}
+
+li:hover {
+  border-bottom: 2px solid #ffffff;
+  border-radius: 1px;
+}
+
+.intro-section ul,
+.footer ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.intro-section {
+  background-image: url("./images/desktop/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+}
+
+.intro-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 150px;
+  height: 50px;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--logo);
+  font-size: 2rem;
+  color: white;
+}
+
+.intro-header {
+  border: 2px solid white;
+  color: white;
+  padding: 15px;
+  width: 480px;
+  position: relative;
+  top: 100px;
+  left: 150px;
+}
+
+section {
+  position: relative;
+}
+
+.interactive-section {
+  height: 600px;
+  margin: 150px 150px 0;
+}
+
+.interactive-section > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.interactive-text {
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: -35px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 90%;
+  max-width: 650px;
+  padding: 100px 0;
+  margin: 0 2rem;
+  height: fit-content;
+  background-color: white;
+}
+
+.interactive-text p {
+  width: 90%;
+}
+
+.our-creations {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px;
+}
+
+.our-creations button {
+  padding: 15px 50px;
+  font-family: var(--header);
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  border: 1px solid #000000;
+  background-color: white;
+  color: var(--black);
+}
+
+.our-creations button:hover {
+  background-color: black;
+  color: white;
+}
+
+.images-grid-section {
+  justify-content: space-between;
+  display: grid;
+  margin: 0 88px 175px;
+  grid-template-columns: repeat(4, minmax(256px, 300px));
+  grid-template-rows: 1fr 1fr;
+  row-gap: 100px;
+  column-gap: 20px;
+}
+
+.images-grid-section h3 {
+  color: white;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.images-grid-section > div {
+  height: 450px;
+}
+
+.images-grid-section > div:hover {
+  height: 450px;
+  z-index: 2;
+  scale: 1.1;
+}
+
+.img-grid-1 {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./images/desktop/image-deep-earth.jpg");
+  background-size: cover;
+}
+.img-grid-2 {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./images/desktop/image-night-arcade.jpg");
+  background-size: cover;
+}
+.img-grid-3 {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./images/desktop/image-soccer-team.jpg");
+  background-size: cover;
+}
+.img-grid-4 {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./images/desktop/image-grid.jpg");
+  background-size: cover;
+}
+.img-grid-5 {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./images/desktop/image-from-above.jpg");
+  background-size: cover;
+}
+.img-grid-6 {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./images/desktop/image-pocket-borealis.jpg");
+  background-size: cover;
+}
+.img-grid-7 {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./images/desktop/image-curiosity.jpg");
+  background-size: cover;
+}
+.img-grid-8 {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./images/desktop/image-fisheye.jpg");
+  background-size: cover;
+}
+
+.footer {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--black);
+  padding: 65px 150px;
+}
+.footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer p {
+  color: var(--grey);
+}
+
+section.footer > div:nth-child(2) {
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.social-media {
+  display: flex;
+  gap: 40px;
+}
+.social-media svg:hover {
+  filter: invert(27%) sepia(89%) saturate(2639%) hue-rotate(324deg)
+    brightness(95%) contrast(94%);
+}
+.social-media svg {
+  scale: 1.5;
+}
+
+#burger {
+  cursor: pointer;
+  scale: 1.75;
+  padding-right: 10px;
+}
+
+#close {
+  background-color: var(--black);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#close nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+  margin: 10vh 10vw;
+}
+
+#close ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#close > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  height: 50px;
+  align-items: center;
+}
+
+#close svg {
+  cursor: pointer;
+  scale: 1.75;
+  padding-right: 20px;
+}
+
+.not-visible {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-family: var(--body);
+    line-height: 1.75;
+  }
+  li {
+    text-align: center;
+    margin: 25px;
+  }
+  li a {
+    font-size: 2rem;
+  }
+  #close nav {
+    align-items: center;
+  }
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-section nav {
+    display: none;
+  }
+  .burger {
+    display: inline-block;
+  }
+  .intro-bar {
+    padding: 1rem 1.5rem;
+    width: -webkit-fill-available;
+  }
+  .intro-header {
+    padding: 20px 30px;
+    max-width: 350px;
+    width: 75%;
+    margin: 1rem;
+    top: 100px;
+    left: 0;
+  }
+  .interactive-section {
+    margin: 100px 50px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .interactive-section > div,
+  .interactive-section > img {
+    position: relative;
+  }
+
+  .interactive-section > img {
+    width: 100%;
+    max-width: 725px;
+  }
+  .images-grid-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px 175px;
+  }
+  .images-grid-section > div {
+    height: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 31%;
+    max-width: 900px;
+    width: 100%;
+  }
+  .images-grid-section > div:hover {
+    height: 0px;
+    z-index: 2;
+    scale: 1.05;
+  }
+  .our-creations {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px 150px;
+  }
+
+  .footer {
+    padding: 65px 50px;
+    grid-column-gap: 25px;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    text-align: end;
+  }
+
+  .footer li {
+    margin: 10px;
+  }
+
+  .img-grid-1 {
+    position: relative;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1)
+      ),
+      url("./images/mobile/image-deep-earth.jpg");
+    background-size: cover;
+  }
+  .img-grid-2 {
+    position: relative;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1)
+      ),
+      url("./images/mobile/image-night-arcade.jpg");
+    background-size: cover;
+  }
+  .img-grid-3 {
+    position: relative;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1)
+      ),
+      url("./images/mobile/image-soccer-team.jpg");
+    background-size: cover;
+  }
+  .img-grid-4 {
+    position: relative;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1)
+      ),
+      url("./images/mobile/image-grid.jpg");
+    background-size: cover;
+  }
+  .img-grid-5 {
+    position: relative;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1)
+      ),
+      url("./images/mobile/image-from-above.jpg");
+    background-size: cover;
+  }
+  .img-grid-6 {
+    position: relative;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1)
+      ),
+      url("./images/mobile/image-pocket-borealis.jpg");
+    background-size: cover;
+  }
+  .img-grid-7 {
+    position: relative;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1)
+      ),
+      url("./images/mobile/image-curiosity.jpg");
+    background-size: cover;
+  }
+  .img-grid-8 {
+    position: relative;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1)
+      ),
+      url("./images/mobile/image-fisheye.jpg");
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .interactive-section {
+    margin: 75px 1rem;
+  }
+  .interactive-section > img {
+    max-width: 600px;
+  }
+  .interactive-text {
+    padding: 50px 0;
+  }
+  h2 {
+    font-size: 2.25rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .our-creations {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 0 50px 100px;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .images-grid-section {
+    margin: 0 32px 100px;
+    row-gap: 50px;
+  }
+  .images-grid-section h3 {
+    padding: 0 0 10px 10px;
+  }
+  .images-grid-section > div {
+    padding-top: 50%;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  li a {
+    font-size: 1.25rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer > div {
+    align-items: center;
+  }
+  section.footer > div:nth-child(2) {
+    align-items: center;
+  }
+  .footer p {
+    text-align: center;
+  }
+}
+footer {
+  text-align: center;
+}
